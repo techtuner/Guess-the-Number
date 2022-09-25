@@ -208,7 +208,7 @@ input{
 .toggle-mode{
     position: absolute;
     height: 100%;
-    bottom: 0;
+    bottom: -5rem;
     right: 1rem ;
 }
 main{
@@ -237,6 +237,13 @@ width: 60%;
 font-size: 2rem;
 margin-top: 2rem;
 line-height: 1.5;
+}
+footer{
+ position: sticky;
+ background:transparent
+ padding: 0.5rem auto;
+ bottom: 0;
+ transform :translateY(40px);
 }
 }
 @media only screen and (max-width: 720px){
