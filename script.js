@@ -1,5 +1,5 @@
 'use strict'
-const secretNumber = Math.trunc(Math.random() * 20) + 1
+let secretNumber = Math.trunc(Math.random() * 20) + 1
 let score = 20;
 let highscore = 0;
 let message = document.querySelector('.message')
@@ -80,4 +80,5 @@ document.querySelector('.reset').addEventListener('click',()=>{
     highscoreValue.textContent = 0
     document.body.style.backgroundColor = ''
     document.body.style.color = '#7391B4'
+	 secretNumber = Math.trunc(Math.random() * 20) + 1
 })
