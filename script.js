@@ -19,6 +19,15 @@ function changeColor(){
     document.querySelector('.highscore').style.color = '#F2F5FD'
     document.querySelector('.githubprofile').style.color = '#FFCE61'
 }
+function resetColor(){
+    document.querySelector('.random-value').style.color = '#7391B4'
+    document.querySelector('.title').style.color = '#7391B4'
+    document.querySelector('.message').style.color = '#7391B4'
+    document.querySelector('.score').style.color = '#7391B4'
+    document.querySelector('.highscore').style.color = '#7391B4'
+    document.querySelector('.githubprofile').style.color = '#FFCE61'
+
+}
 // Decrease Score
 function decreaseScore(){
     score--
@@ -45,7 +54,7 @@ document.querySelector('.check').addEventListener('click',() =>{
     else{
         displayMessage('🎉 Correct Answer')
         document.querySelector('.random-value').textContent = secretNumber
-        changeColor()
+
         highscore = score
         highscoreValue.textContent = highscore
         document.body.style.backgroundColor = 'green'
@@ -53,13 +62,13 @@ document.querySelector('.check').addEventListener('click',() =>{
 
 
     }
-   }
-   else {
+}
+else {
     scoreValue.textContent = 0;
     displayMessage('☠️ Game Over!!')
     document.body.style.backgroundColor = 'red'
-    changeColor()
-   }
+
+}
 })
 // Reset Button
 document.querySelector('.reset').addEventListener('click',()=>{
@@ -70,4 +79,5 @@ document.querySelector('.reset').addEventListener('click',()=>{
     scoreValue.textContent = 20
     highscoreValue.textContent = 0
     document.body.style.backgroundColor = ''
+    document.body.style.color = '#7391B4'
 })
