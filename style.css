@@ -22,6 +22,14 @@ body.dark{
     background: var(--dark-color);
     color: var(--box-background);
 }
+.instruction{
+	font-size: 2rem;
+	margin: 1.5rem auto;
+	color: var(--text-color);
+	font-weight:900;
+	text-align:center;
+	font-family: 'Roboto',sans-serif
+}
 a{
     text-decoration: none;
     color: var(--text-color);
